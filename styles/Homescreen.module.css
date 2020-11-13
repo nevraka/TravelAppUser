@@ -1,0 +1,95 @@
+.container {
+  background-color: #0258c1;
+  display: flex;
+  flex-direction: row;
+}
+.img {
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+.logo {
+  font-size: x-large;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.button-block {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+  align-items: center;
+  color: white;
+  grid-gap: 10px;
+}
+
+.button-toogle {
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid;
+  height: 40px;
+  width: 40px;
+}
+.button-currency {
+  padding: 10px;
+  padding-left: 15px;
+  width: 60px;
+  border-radius: 50px;
+  height: 40px;
+  border: 1px solid;
+}
+.button-custom {
+  padding: 10px;
+  border-radius: 60px;
+  height: 40px;
+  border: 1px solid;
+  width: 40px;
+}
+.banner {
+  color: white;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica,
+    Arial, sans-serif;
+  text-size-adjust: 100%;
+}
+.header-title {
+  text-align: center;
+  width: 100%;
+  padding: 90px 20px 0;
+  margin-bottom: 30px;
+}
+.minibanner {
+  margin: 0;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: block;
+  color: white;
+}
+
+.active-hotel {
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.active-hotel span {
+  border: white 1px solid;
+  border-radius: 40px;
+  padding: 5px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+}
+.origin {
+  border: tan;
+  height: 30px;
+  width: 50px;
+}
