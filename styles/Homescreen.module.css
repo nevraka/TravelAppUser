@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: row;
 }
+.containerDark {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
 .img {
   height: 50px;
   border-radius: 50px;
@@ -25,13 +30,6 @@
   grid-gap: 10px;
 }
 
-.button-toogle {
-  padding: 10px;
-  border-radius: 30px;
-  border: 1px solid;
-  height: 40px;
-  width: 40px;
-}
 .button-currency {
   padding: 10px;
   padding-left: 15px;
@@ -87,9 +85,81 @@
 .search {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 5px 5px;
+  color: white;
+  width: 100%;
 }
 .origin {
-  border: tan;
-  height: 30px;
-  width: 50px;
+  border: 2px solid white;
+  height: 50px;
+  width: 200px;
+  line-height: 1.75;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.origin input {
+  border: none;
+  border-color: transparent;
+}
+.checkin {
+  border: 2px soli white;
+  height: 50px;
+  width: 200px;
+  line-height: 1.75;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.checkout {
+  border: 2px soli white;
+  height: 50px;
+  width: 200px;
+  line-height: 1.75;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.dates {
+  border: 2px solid white;
+  height: 50px;
+  width: 200px;
+  line-height: 1.75;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.passengers {
+  border: 2px solid white;
+  height: 50px;
+  width: 200px;
+  line-height: 1.75;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.guest {
+  border: 2px solid white;
+  height: 50px;
+  width: 200px;
+  line-height: 1.75;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.submit {
+  border: 2px soli white;
+  height: 50px;
+  width: 200px;
+  line-height: 1.75;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: x-large;
+}
+.multisearch {
+  padding-left: 150px;
+  padding-top: 50px;
 }
