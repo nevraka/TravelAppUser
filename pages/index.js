@@ -1,7 +1,7 @@
 import styles from '../styles/Homescreen.module.css';
-import Header from './components/header';
-import Form from './components/form';
 import { ThemeProvider } from './ThemeContext';
+import Header from './components/Header';
+import Form from './components/Form';
 
 function Homescreen() {
   return (
