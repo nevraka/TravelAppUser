@@ -1,10 +1,10 @@
 import styles from '../../styles/Homescreen.module.css';
-import Image from 'next/image';
-import { Dropdown, Menu, Anchor } from 'antd';
-import { Switch } from 'antd';
 import currencies from './currencies.json';
 import { ThemeContext } from '../ThemeContext';
 import { useContext, useState } from 'react';
+import Image from 'next/image';
+import { Dropdown, Menu } from 'antd';
+import { Switch } from 'antd';
 
 function Header() {
   const [theme, setTheme] = useContext(ThemeContext);
