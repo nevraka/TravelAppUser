@@ -1,5 +1,5 @@
 import styles from '../../styles/Homescreen.module.css';
-import { Input, Cascader, Button, Divider } from 'antd';
+import { Input, Cascader, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import GuestInputs from './GuestInputs';
 
@@ -10,8 +10,6 @@ function Form() {
         <div>
           <GuestInputs />
         </div>
-        <Divider style={{ margin: 5 }} />
-        <div style={{ padding: 8 }}>Age of children</div>
       </div>
     );
   }
