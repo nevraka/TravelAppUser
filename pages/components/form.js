@@ -1,7 +1,8 @@
 import styles from '../../styles/Homescreen.module.css';
-import { Input, Cascader, Button } from 'antd';
+import { Input, Cascader, Button, Dropdown } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import GuestInputs from './GuestInputs';
+import DatePickers from './DatePickers';
 
 function Form() {
   function dropdownRender() {
@@ -17,8 +18,7 @@ function Form() {
   return (
     <div className={styles.search}>
       <Input placeholder="Your Destination/hotel" className={styles.origin} />
-      <Input placeholder="Check-in date " className={styles.checkin} />
-      <Input placeholder="Check-out date" className={styles.checkout} />
+      <DatePickers className={styles.checkin} />
       <Cascader
         placeholder="Guest"
         bordered={false}
