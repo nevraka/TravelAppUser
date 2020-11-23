@@ -49,8 +49,8 @@
   color: white;
   font-size: 44px;
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: Stapel, -apple-system, BlinkMacSystemFont, Inter, Roboto,
+    Helvetica, Arial, sans-serif;
   text-size-adjust: 100%;
 }
 .header-title {
@@ -112,15 +112,7 @@
   background-color: white;
   color: black;
 }
-.checkout {
-  border: 2px soli white;
-  height: 50px;
-  width: 200px;
-  line-height: 1.75;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-}
+
 .dates {
   border: 2px solid white;
   height: 50px;
@@ -160,6 +152,7 @@
   font-size: x-large;
 }
 .multisearch {
-  padding-left: 150px;
-  padding-top: 50px;
+  padding-left: 550px;
+  padding-top: 20px;
+  color: white;
 }
