@@ -22,9 +22,9 @@ function Header() {
 
   const menu = (
     <Menu>
-      {Object.keys(currencies).map((k) => (
-        <Menu.Item onClick={() => setCurrency(k)} key={k}>
-          {k}
+      {Object.keys(currencies).map((item) => (
+        <Menu.Item id={item} onClick={() => setCurrency(item)} key={item}>
+          {item} - {currencies[item].name}
         </Menu.Item>
       ))}
     </Menu>
