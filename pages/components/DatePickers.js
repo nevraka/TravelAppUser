@@ -1,3 +1,4 @@
+import styles from '../../styles/Homescreen.module.css';
 import { DatePicker, Space } from 'antd';
 import React, { useState } from 'react';
 import moment from 'moment';
@@ -18,6 +19,7 @@ function DatePickers() {
           format="DD/MM/YYYY"
           onChange={setDates}
           value={dates}
+          className={styles.checkin}
         />
       </Space>
     </div>
