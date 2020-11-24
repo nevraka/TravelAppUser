@@ -12,6 +12,7 @@
     "@ant-design/icons": "^4.3.0",
     "antd": "^4.8.4",
     "countrycitystatejson": "^20.8.9-a",
+    "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "next": "10.0.1",
     "react": "17.0.1",
