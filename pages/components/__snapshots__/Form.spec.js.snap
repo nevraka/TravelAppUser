@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search 1`] = `
+Array [
+  Object {
+    "city": "Uberlingen",
+    "country": "Germany",
+    "flag": "🇩🇪",
+  },
+  Object {
+    "city": "Berlin",
+    "country": "Germany",
+    "flag": "🇩🇪",
+  },
+  Object {
+    "city": "Berliste",
+    "country": "Romania",
+    "flag": "🇷🇴",
+  },
+  Object {
+    "city": "Berlin",
+    "country": "El Salvador",
+    "flag": "🇸🇻",
+  },
+  Object {
+    "city": "Berlin",
+    "country": "United States",
+    "flag": "🇺🇸",
+  },
+  Object {
+    "city": "Berlin",
+    "country": "United States",
+    "flag": "🇺🇸",
+  },
+  Object {
+    "city": "Oberlin",
+    "country": "United States",
+    "flag": "🇺🇸",
+  },
+  Object {
+    "city": "New Berlin",
+    "country": "United States",
+    "flag": "🇺🇸",
+  },
+]
+`;
+
+exports[`search 2`] = `
+Array [
+  Object {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "flag": "🇹🇷",
+  },
+]
+`;
