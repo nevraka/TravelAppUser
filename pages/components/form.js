@@ -45,7 +45,7 @@ function Form() {
     );
   }
 
-  const [destination, setDestination] = useState('');
+  const [destination, setDestination] = useState(null);
   const [filteredCities, setFilteredCities] = useState([]);
 
   const searchHandler = (s) => {
@@ -60,26 +60,29 @@ function Form() {
   return (
     <>
       <div className={styles.search}>
-        <Select
-          showSearch
-          value={destination}
-          placeholder="hebe"
-          style={{ width: '150px' }}
-          defaultActiveFirstOption={false}
-          showArrow={false}
-          filterOption={false}
-          onSearch={searchHandler}
-          onSelect={setDestination}
-          notFoundContent={null}
-        >
-          {filteredCities.map((d, i) => (
-            <Option key={i} value={d.city}>
-              {d.city}
-              <br />
-              {d.flag} <em>{d.country}</em>
-            </Option>
-          ))}
-        </Select>
+        <div className={styles.selectContainer}>
+          <Select
+            showSearch
+            value={destination}
+            placeholder={'London'}
+            className={styles.select}
+            defaultActiveFirstOption={false}
+            showArrow={false}
+            filterOption={false}
+            onSearch={searchHandler}
+            onSelect={setDestination}
+            notFoundContent={null}
+            bordered={false}
+          >
+            {filteredCities.map((d, i) => (
+              <Option key={i} value={d.city} className={styles.option}>
+                {d.city}
+                <br />
+                {d.flag} <em>{d.country}</em>
+              </Option>
+            ))}
+          </Select>
+        </div>
         <DatePickers />
         <Cascader
           placeholder="Guest"

@@ -135,13 +135,12 @@
   border: 2px solid white;
   height: 50px;
   width: 200px;
-
   border-radius: 5px;
   background-color: white;
   color: black;
 }
 .submit {
-  border: 2px soli white;
+  border: 2px solid white;
   height: 50px;
   width: 200px;
   line-height: 1.75;
@@ -155,4 +154,22 @@
   padding-left: 550px;
   padding-top: 20px;
   color: white;
+}
+.option {
+  height: 50px;
+  border-radius: 5px;
+}
+.selectContainer {
+  background-color: white;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.select {
+  width: 150px;
+  background-color: white;
+  display: flex;
 }
