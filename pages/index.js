@@ -16,8 +16,8 @@ function Homescreen() {
           <div className={styles['active-hotel']}>
             <span>HOTELS</span>
           </div>
+          <Form />
         </div>
-        <Form />
       </ThemeProvider>
     </>
   );

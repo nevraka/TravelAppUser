@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from '../../styles/Homescreen.module.css';
-import { Cascader, Button, Select } from 'antd';
+import { Cascader, Button, Select, Divider } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import GuestInputs from './GuestInputs';
 import DatePickers from './DatePickers';
@@ -94,9 +94,7 @@ function Form() {
           Find Hotel
         </Button>
       </div>
-      <Button type="link" className={styles.multisearch}>
-        🧩 Multi-city search
-      </Button>
+      <div className={styles.multisearch}>🧩 Multi-city search</div>
     </>
   );
 }

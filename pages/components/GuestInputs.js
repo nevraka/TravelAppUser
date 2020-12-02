@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { Button, Divider, Select, Menu } from 'antd';
-import {
-  PlusCircleOutlined,
-  MinusCircleOutlined,
-  DownOutlined,
-} from '@ant-design/icons';
+import styles from '../../styles/Homescreen.module.css';
+import { Button, Divider, Select } from 'antd';
+import { PlusCircleOutlined, MinusCircleOutlined } from '@ant-design/icons';
 
 const { Option } = Select;
 
@@ -35,8 +32,15 @@ function GuestInputs() {
 
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'row', padding: '10px' }}>
-        <div>Adults</div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          padding: '10px',
+          alignItems: 'center',
+        }}
+      >
+        <div style={{ fontWeight: 'bold' }}>Adults</div>
         <div style={{ marginLeft: 'auto' }}>
           <Button
             type="primary"
@@ -44,6 +48,7 @@ function GuestInputs() {
             icon={<MinusCircleOutlined />}
             disabled={adults < 1}
             onClick={handleDecrementAdults}
+            style={{ marginRight: '8px' }}
           />
           {adults}
           <Button
@@ -54,12 +59,19 @@ function GuestInputs() {
               adults >= MAX_ADULTS || adults + children >= MAX_PASSENGERS
             }
             onClick={handleIncrementAdults}
+            style={{ marginLeft: '8px' }}
           />
         </div>
       </div>
-
-      <div style={{ display: 'flex', flexDirection: 'row', padding: '10px' }}>
-        <div>Children</div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          padding: '10px',
+          alignItems: 'center',
+        }}
+      >
+        <div style={{ fontWeight: 'bold' }}>Children</div>
         <div style={{ marginLeft: 'auto' }}>
           <Button
             type="primary"
@@ -67,6 +79,7 @@ function GuestInputs() {
             icon={<MinusCircleOutlined />}
             disabled={children < 1}
             onClick={handleDecrementChildren}
+            style={{ marginRight: '8px' }}
           />
           {children}
           <Button
@@ -77,6 +90,7 @@ function GuestInputs() {
               children >= MAX_CHILDREN || adults + children >= MAX_PASSENGERS
             }
             onClick={handleIncrementChildren}
+            style={{ marginLeft: '8px' }}
           />
         </div>
       </div>

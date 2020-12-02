@@ -2,7 +2,6 @@ import styles from '../../styles/Homescreen.module.css';
 import currencies from './currencies.json';
 import { ThemeContext } from '../ThemeContext';
 import { useContext, useState } from 'react';
-import Image from 'next/image';
 import { Dropdown, Menu } from 'antd';
 import { Switch } from 'antd';
 
@@ -32,16 +31,8 @@ function Header() {
 
   return (
     <div className={dark ? styles.containerDark : styles.container}>
-      <div className={styles.logo}>
-        WorldWide
-        <Image
-          className={styles.img}
-          src="/img_1.jpg"
-          alt=""
-          width={70}
-          height={50}
-        />
-      </div>
+      <div className={styles.logo}>WorldWide</div>
+      <img className={styles.logoImg} src="/img_1.jpg" alt="" />
       <div className={styles['button-block']}>
         <Switch onChange={toogleTheme}></Switch>
         <Dropdown overlay={menu} trigger={['click']}>
